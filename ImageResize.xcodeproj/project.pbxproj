@@ -15,6 +15,8 @@
 		32AF40682296300A001D6FEF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 32AF40672296300A001D6FEF /* main.m */; };
 		32AF40722296300A001D6FEF /* ImageResizeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 32AF40712296300A001D6FEF /* ImageResizeTests.m */; };
 		32AF407D2296300A001D6FEF /* ImageResizeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 32AF407C2296300A001D6FEF /* ImageResizeUITests.m */; };
+		32AF408C229630AF001D6FEF /* resourceImage.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 32AF408B229630AF001D6FEF /* resourceImage.jpg */; };
+		32AF4091229631CB001D6FEF /* UIImage+Resize.m in Sources */ = {isa = PBXBuildFile; fileRef = 32AF4090229631CB001D6FEF /* UIImage+Resize.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,9 @@
 		32AF40782296300A001D6FEF /* ImageResizeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ImageResizeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		32AF407C2296300A001D6FEF /* ImageResizeUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImageResizeUITests.m; sourceTree = "<group>"; };
 		32AF407E2296300A001D6FEF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		32AF408B229630AF001D6FEF /* resourceImage.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = resourceImage.jpg; sourceTree = "<group>"; };
+		32AF408F229631CB001D6FEF /* UIImage+Resize.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+Resize.h"; sourceTree = "<group>"; };
+		32AF4090229631CB001D6FEF /* UIImage+Resize.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Resize.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +106,7 @@
 		32AF405722963009001D6FEF /* ImageResize */ = {
 			isa = PBXGroup;
 			children = (
+				32AF408B229630AF001D6FEF /* resourceImage.jpg */,
 				32AF405822963009001D6FEF /* AppDelegate.h */,
 				32AF405922963009001D6FEF /* AppDelegate.m */,
 				32AF405B22963009001D6FEF /* ViewController.h */,
@@ -110,6 +116,8 @@
 				32AF40632296300A001D6FEF /* LaunchScreen.storyboard */,
 				32AF40662296300A001D6FEF /* Info.plist */,
 				32AF40672296300A001D6FEF /* main.m */,
+				32AF408F229631CB001D6FEF /* UIImage+Resize.h */,
+				32AF4090229631CB001D6FEF /* UIImage+Resize.m */,
 			);
 			path = ImageResize;
 			sourceTree = "<group>";
@@ -238,6 +246,7 @@
 				32AF40652296300A001D6FEF /* LaunchScreen.storyboard in Resources */,
 				32AF40622296300A001D6FEF /* Assets.xcassets in Resources */,
 				32AF406022963009001D6FEF /* Main.storyboard in Resources */,
+				32AF408C229630AF001D6FEF /* resourceImage.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,6 +272,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				32AF405D22963009001D6FEF /* ViewController.m in Sources */,
+				32AF4091229631CB001D6FEF /* UIImage+Resize.m in Sources */,
 				32AF40682296300A001D6FEF /* main.m in Sources */,
 				32AF405A22963009001D6FEF /* AppDelegate.m in Sources */,
 			);

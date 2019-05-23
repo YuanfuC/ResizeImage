@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "UIImage+Resize.h"
 
 @interface ViewController ()
 
@@ -17,7 +18,18 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-}
+    
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"resourceImage" ofType:@"jpg"];
+    
+    UIImage *sourceImage = [UIImage imageWithContentsOfFile:path];
 
+    UIImage *scaleFillImage =  [sourceImage resize:CGSizeMake(1000, 1000) fillColor:UIColor.redColor mode:ImageResizeModeScaleFill];
+    
+    UIImage *aspectFitImage =  [sourceImage resize:CGSizeMake(1000, 1000) fillColor:UIColor.redColor mode:ImageResizeModeAspectFit];
+    
+    UIImage *aspectFillImage =  [sourceImage resize:CGSizeMake(1000, 1000) fillColor:UIColor.redColor mode:ImageResizeModeAspectFill];
+    
+    NSLog(@"");
+}
 
 @end
